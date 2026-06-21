@@ -1,0 +1,2 @@
+City: surat, Latitude: 21.19594, Longitude: 72.83023, Temperature: 30.2°C
+City: ahmedabad, Latitude: 23.02579, Longitude: 72.58727, Temperature: 32.8°C
