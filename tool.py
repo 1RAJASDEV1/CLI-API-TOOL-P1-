@@ -13,7 +13,7 @@ while True:
         geo_url = f"https://geocoding-api.open-meteo.com/v1/search?name={city}"
 
         geo_response = requests.get(geo_url, timeout=10)
-        geo_response.raise_for_status()
+        geo_response.raise_for_status() # except requests.exceptions.HTTPError:  print("API returned an error.")
 
         geo_data = geo_response.json()
 
@@ -32,7 +32,7 @@ while True:
         )
 
         weather_response = requests.get(weather_url, timeout=10)
-        weather_response.raise_for_status()
+        weather_response.raise_for_status()  # except requests.exceptions.HTTPError:  print("API returned an error.")
 
         weather_data = weather_response.json()
 
